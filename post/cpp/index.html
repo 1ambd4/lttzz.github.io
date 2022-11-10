@@ -1,0 +1,1811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Cpp - LTTZZ&#39;s BLOG</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="lttzz" /><meta name="description" content="" /><meta name="keywords" content="Hugo, theme, even, lttzz" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.104.3 with theme even" />
+
+
+<link rel="canonical" href="https://lttzz.github.io/post/cpp/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<link href="/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="Cpp" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://lttzz.github.io/post/cpp/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-10-07T09:27:45+08:00" />
+<meta property="article:modified_time" content="2021-10-07T09:27:45+08:00" />
+
+<meta itemprop="name" content="Cpp">
+<meta itemprop="description" content=""><meta itemprop="datePublished" content="2021-10-07T09:27:45+08:00" />
+<meta itemprop="dateModified" content="2021-10-07T09:27:45+08:00" />
+<meta itemprop="wordCount" content="6201">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Cpp"/>
+<meta name="twitter:description" content=""/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">LTTZZ&#39;s BLOG</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/books/">
+        <li class="mobile-menu-item">Books</li>
+      </a><a href="/nonsense/">
+        <li class="mobile-menu-item">Nonsense</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">LTTZZ&#39;s BLOG</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/books/">Books</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/nonsense/">Nonsense</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Cpp</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2021-10-07 </span>
+        
+          <span class="more-meta"> 6201 words </span>
+          <span class="more-meta"> 13 mins read </span>
+        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> times read </span>
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#访问控制权限">访问控制权限</a></li>
+      </ul>
+    </li>
+    <li><a href="#基本语法">基本语法</a>
+      <ul>
+        <li><a href="#函数声明">函数声明</a></li>
+      </ul>
+    </li>
+    <li><a href="#stl">STL</a>
+      <ul>
+        <li><a href="#container">container</a>
+          <ul>
+            <li><a href="#vector">vector</a></li>
+          </ul>
+        </li>
+        <li><a href="#iterator">iterator</a>
+          <ul>
+            <li><a href="#common-iterator">common iterator</a></li>
+            <li><a href="#insert-iterator">insert iterator</a></li>
+            <li><a href="#stream-iterator">stream iterator</a></li>
+            <li><a href="#reverse-iterator">reverse iterator</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#effective-c">Effective C++</a>
+      <ul>
+        <li><a href="#chapter-1-accustoming-youself-to-c">chapter 1 Accustoming youself to C++</a>
+          <ul>
+            <li><a href="#item-01-view-c-as-a-federation-of-languages">item 01: View C++ as a federation of languages</a></li>
+            <li><a href="#item-02-prefer-consts-enums-and-inlines-to-defines">item 02: Prefer consts， enums and inlines to #defines</a></li>
+            <li><a href="#item-03-use-const-whenever-possible">item 03: Use const whenever possible</a></li>
+            <li><a href="#修饰对象">修饰对象</a></li>
+            <li><a href="#修饰函数">修饰函数</a></li>
+            <li><a href="#item-04-make-sure-that-objects-are-initialized-before-they-are-used">item 04: Make sure that objects are initialized before they are used</a></li>
+          </ul>
+        </li>
+        <li><a href="#chapter-2-constructors-destructors-and-assignment-operators">chapter 2 Constructors, Destructors, and Assignment Operators</a>
+          <ul>
+            <li><a href="#item-05-know-what-functions-c-cliently-writes-and-call">item 05: Know what functions C++ cliently writes and call</a></li>
+            <li><a href="#item-06-explicitly-disallow-the-use-of-compiler-generated-functions-you-do-not-want">item 06: Explicitly disallow the use of compiler-generated functions you do not want</a></li>
+            <li><a href="#item-07-declare-destructors-virtual-in-polymorphic-base-classes">item 07: Declare destructors virtual in polymorphic base classes</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#单元测试">单元测试</a>
+      <ul>
+        <li><a href="#说明">说明</a></li>
+        <li><a href="#例子">例子</a></li>
+      </ul>
+    </li>
+    <li><a href="#八股文">八股文</a></li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h2 id="访问控制权限">访问控制权限</h2>
+<ol>
+<li>
+<p>访问权由类本身授予，而不是但方面获取。</p>
+<p>类作为被保护的单位，基本规则是你不能授予自己访问某个类的权利，只有安放在类内部的声明（家电是由类的拥有者放置的）可以授予你访问权。按照默认规则，所有信息都是私有的。</p>
+</li>
+<li>
+<p>受控制的是访问权，而不是可见性。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">37</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">A</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="k">public</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl"><span class="k">private</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">  	<span class="kt">int</span> <span class="n">a</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">B</span> <span class="o">:</span> <span class="k">public</span> <span class="n">A</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="k">public</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">  	<span class="n">print</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      	<span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">a</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">private</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>用B的实例调用<code>print()</code>方法会报错，因为类A里的私有成员变量a遮蔽了全局变量a，而类B对来自于类A的数据成员a不具有访问权，因而报错，也即并非不可见，而是无权访问。倘使此处设计为可见性，那么派生类胡乱写会导致程序逻辑的极度混乱。</p>
+</li>
+<li>
+<p>c++不需要垃圾回收</p>
+<p>在1985年，还是c with class的时候，c++之父考虑过垃圾回收，但考虑到对于一个已经被用在实时处理和硬核心系统（如设备驱动程序）的语言而言，垃圾回收的引入并不合适。</p>
+</li>
+</ol>
+<h1 id="基本语法">基本语法</h1>
+<h2 id="函数声明">函数声明</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="c1">// 如何正确理解下面的语句？
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="o">*</span><span class="p">(</span><span class="kt">void</span><span class="p">(</span><span class="o">*</span><span class="p">)())</span><span class="mi">0</span><span class="p">)();</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>解读之前，先谈一谈类型转换和函数指针。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="c1">// func是一个指针，指向一个函数，这个函数的返回值是float
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 即func是指向返回值为float的函数指针
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kt">float</span> <span class="p">(</span><span class="o">*</span><span class="n">func</span><span class="p">)();</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 那么，其类型就是去掉变量名和末尾分号
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kt">float</span> <span class="p">(</span><span class="o">*</span><span class="p">)()</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// c/c++是可以显式强转的
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kt">double</span> <span class="n">d</span> <span class="o">=</span> <span class="mf">233.332</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 以下三种写法都是接受的
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="n">d</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="kt">int</span><span class="p">(</span><span class="n">d</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)(</span><span class="n">d</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 其他非内建类型强转同理，因而开始的函数指针对应的类型转换符如下
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">(</span><span class="kt">float</span> <span class="p">(</span><span class="o">*</span><span class="p">)())</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 函数指针
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 在c/c++中，如果pf是一个函数指针，那么下面两条调用语句等价（语法糖了
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">(</span><span class="o">*</span><span class="n">pf</span><span class="p">)();</span>
+</span></span><span class="line"><span class="cl"><span class="n">pf</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 所以千万不要省略括号，否则就是另一个意思了
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="o">*</span><span class="n">pf</span><span class="p">();</span>	<span class="c1">// *((*pf)())
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 说完了函数指针调用，那如何调用特定地址处的函数呢？比如说0x00000000
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">(</span><span class="o">*</span><span class="mi">0</span><span class="p">)();</span>	<span class="c1">// 好想这么写，但不行，因为字面量0默认不会被当作地址来解释
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 所以需要显式强转
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 如何转成一个返回void的函数指针呢？先声明一个此类型变量吧
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kt">void</span> <span class="p">(</span><span class="o">*</span><span class="n">func</span><span class="p">)();</span>  <span class="c1">// 调用：(*func)();
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 因而可得类型转换符
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">(</span><span class="kt">void</span> <span class="p">(</span><span class="o">*</span><span class="p">)())</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 对0强转
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">(</span><span class="kt">void</span> <span class="p">(</span><span class="o">*</span><span class="p">)())</span><span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 现在是一个函数指针了，调用
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">(</span><span class="o">*</span><span class="p">(</span><span class="kt">void</span> <span class="p">(</span><span class="o">*</span><span class="p">)())</span><span class="mi">0</span><span class="p">)();</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="stl">STL</h1>
+<h2 id="container">container</h2>
+<h3 id="vector">vector</h3>
+<h4 id="reserve">reserve</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="c1">// 看 c++ primer 的时候，随手就写了下面的代码
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">nums</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">nums</span><span class="p">.</span><span class="n">reserve</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="p">(</span><span class="n">intt</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">100</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  	<span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">(</span><span class="n">rand</span><span class="p">()</span> <span class="o">%</span> <span class="mi">200</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;::</span><span class="n">const_iterator</span> <span class="n">vit</span> <span class="o">=</span> <span class="n">find</span><span class="p">(</span><span class="n">nums</span><span class="p">.</span><span class="n">cbegin</span><span class="p">(),</span> <span class="n">nums</span><span class="p">.</span><span class="n">cend</span><span class="p">(),</span> <span class="mi">37</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="n">vit</span> <span class="o">!=</span> <span class="n">nums</span><span class="p">.</span><span class="n">cend</span><span class="p">()</span> <span class="o">?</span> <span class="s">&#34;no&#34;</span> <span class="o">:</span> <span class="s">&#34;yes&#34;</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 不管 target 怎么换，即使换成了 nums[0]，还都只是输出 no
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 尝试输出，有值啊
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">100</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  	<span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="s">&#34; &#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 但是 range-base for 没输出？
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">for</span> <span class="p">(</span><span class="k">const</span> <span class="k">auto</span><span class="o">&amp;</span> <span class="nl">num</span> <span class="p">:</span> <span class="n">nums</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  	<span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">num</span> <span class="o">&lt;&lt;</span> <span class="s">&#34; &#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 觉得不对劲儿，遂想到输出 size 和 capacity
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">nums</span><span class="p">.</span><span class="n">size</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="s">&#34; &#34;</span> <span class="o">&lt;&lt;</span> <span class="n">nums</span><span class="p">.</span><span class="n">capacity</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 果然，输出 0 100
+</span></span></span><span class="line"><span class="cl"><span class="c1">// cppreference 看了下 vector::reserve 果然，仅仅是建议增大 capacity 而已。
+</span></span></span><span class="line"><span class="cl"><span class="c1">// Increase the capacity of the vector to a value that&#39;s greater or equal to new_cap. 
+</span></span></span><span class="line"><span class="cl"><span class="c1">// If new_cap is greater than the current capacity(), new  storage is allocated, otherwise the function does nothing.
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 而 range-based for 和 find 都用到了 size，自然得不到想要的结果了。
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="iterator">iterator</h2>
+<p>越来越觉得 Iterator 可爱的很。</p>
+<h3 id="common-iterator">common iterator</h3>
+<ul>
+<li>iterator</li>
+<li>const_iterator</li>
+</ul>
+<h3 id="insert-iterator">insert iterator</h3>
+<ul>
+<li>back_inserter</li>
+<li>front_inserter</li>
+<li>Inserter</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">nums</span> <span class="p">{</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span> <span class="p">};</span>
+</span></span><span class="line"><span class="cl"><span class="n">list</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">case1</span><span class="p">,</span> <span class="n">case2</span><span class="p">,</span> <span class="n">case3</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// algorithm 里的 generic algorithm 如果操作两个容器，且有一个容器只给了 begin，那么其实需要程序员确保这个 container 不比另一个 container 小，否则结果是未定义的
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 这样一来，copy 之类的对空 container 操作并不能使用普通的 iterator
+</span></span></span><span class="line"><span class="cl"><span class="c1">// inserter iterator 操作会转化成相应容器的插入操作，并在之后移动自身比指向
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">copy</span><span class="p">(</span><span class="n">nums</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">nums</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span> <span class="n">back_inserter</span><span class="p">(</span><span class="n">case1</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl"><span class="n">copy</span><span class="p">(</span><span class="n">nums</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">nums</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span> <span class="n">front_inserter</span><span class="p">(</span><span class="n">case2</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl"><span class="n">copy</span><span class="p">(</span><span class="n">nums</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">nums</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span> <span class="n">inserter</span><span class="p">(</span><span class="n">case3</span><span class="p">,</span> <span class="n">case3</span><span class="p">.</span><span class="n">begin</span><span class="p">()));</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="stream-iterator">stream iterator</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="c1">// 从标准输入读取数据进 vector，排序后输出到标准输出
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="n">istream_iterator</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">in_iter</span><span class="p">(</span><span class="n">cin</span><span class="p">),</span> <span class="n">eof</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">ostream_iterator</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">out_iter</span><span class="p">(</span><span class="n">cout</span><span class="p">,</span> <span class="s">&#34; &#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">nums</span><span class="p">(</span><span class="n">in_iter</span><span class="p">,</span> <span class="n">eof</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">sort</span><span class="p">(</span><span class="n">nums</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">nums</span><span class="p">.</span><span class="n">end</span><span class="p">());</span>
+</span></span><span class="line"><span class="cl"><span class="n">copy</span><span class="p">(</span><span class="n">nums</span><span class="p">.</span><span class="n">cbegin</span><span class="p">(),</span> <span class="n">nums</span><span class="p">.</span><span class="n">cend</span><span class="p">(),</span> <span class="n">out_iter</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="reverse-iterator">reverse iterator</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="c1">// 出了 forward_list 外都支持 reverse iterator
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">sort</span><span class="p">(</span><span class="n">nums</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">nums</span><span class="p">.</span><span class="n">end</span><span class="p">());</span>
+</span></span><span class="line"><span class="cl"><span class="n">sort</span><span class="p">(</span><span class="n">nums</span><span class="p">.</span><span class="n">rbegin</span><span class="p">(),</span> <span class="n">nums</span><span class="p">.</span><span class="n">rend</span><span class="p">());</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="effective-c">Effective C++</h1>
+<h2 id="chapter-1-accustoming-youself-to-c">chapter 1 Accustoming youself to C++</h2>
+<p>declaration：告知编译器某个对象的名称和类型，但略去细节。</p>
+<p>definition：提供一些声明式遗漏的细节给编译器。</p>
+<p>initialization：给予对象初值。</p>
+<p>只这么说，挺抽象的，喜欢 C++ 的一个理由就是，搞不清楚的细节，总可以去看汇编代码和源码，正应了侯捷所说：“源码之前，了无秘密”。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="k">extern</span> <span class="k">const</span> <span class="kt">int</span> <span class="n">a0</span><span class="p">;</span>	<span class="c1">// 毫无疑问是 declaration
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">a1</span><span class="p">;</span>	<span class="c1">// 这是 declaration 还是 definition 呢？
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 唔，谁说谁有理，但我相信编译器
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kt">int</span> <span class="n">a</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">a</span><span class="p">;</span>	<span class="c1">// 这么写的报错信息是 error: redeclaration of &#39;int a&#39;
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 破案了，是 declaration，可似乎没注意到对象有报过 redefinition error哎
+</span></span></span><span class="line"><span class="cl"><span class="c1">// function redefinition 和 class redefinition 倒是常见
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 这么看起来，像 int a 这种，该属 definition
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">extern</span> <span class="kt">int</span> <span class="n">a0</span><span class="p">;</span>	<span class="c1">// 无对应汇编代码
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kt">int</span> <span class="n">a1</span><span class="p">;</span>	<span class="c1">// 无对应汇编代码
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kt">int</span> <span class="n">a2</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>	<span class="c1">// movl    $2, -4(%rbp)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nl">main</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">pushq</span>   <span class="o">%</span><span class="n">rbp</span>
+</span></span><span class="line"><span class="cl">        <span class="n">movq</span>    <span class="o">%</span><span class="n">rsp</span><span class="p">,</span> <span class="o">%</span><span class="n">rbp</span>
+</span></span><span class="line"><span class="cl">        <span class="n">movl</span>    <span class="err">$</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">4</span><span class="p">(</span><span class="o">%</span><span class="n">rbp</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">movl</span>    <span class="err">$</span><span class="mi">0</span><span class="p">,</span> <span class="o">%</span><span class="n">eax</span>
+</span></span><span class="line"><span class="cl">        <span class="n">popq</span>    <span class="o">%</span><span class="n">rbp</span>
+</span></span><span class="line"><span class="cl">        <span class="n">ret</span>
+</span></span><span class="line"><span class="cl">          
+</span></span><span class="line"><span class="cl"><span class="c1">// 当 initialization 或者 assignment 的时候才会分配内存
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kt">int</span> <span class="n">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">a</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">a2</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">b</span> <span class="o">=</span> <span class="n">a2</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="nl">main</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">pushq</span>   <span class="o">%</span><span class="n">rbp</span>
+</span></span><span class="line"><span class="cl">        <span class="n">movq</span>    <span class="o">%</span><span class="n">rsp</span><span class="p">,</span> <span class="o">%</span><span class="n">rbp</span>
+</span></span><span class="line"><span class="cl">        <span class="n">movl</span>    <span class="err">$</span><span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">4</span><span class="p">(</span><span class="o">%</span><span class="n">rbp</span><span class="p">)</span>	<span class="c1">// a
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="n">movl</span>    <span class="err">$</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">8</span><span class="p">(</span><span class="o">%</span><span class="n">rbp</span><span class="p">)</span>	<span class="c1">// a2
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="n">movl</span>    <span class="o">-</span><span class="mi">8</span><span class="p">(</span><span class="o">%</span><span class="n">rbp</span><span class="p">),</span> <span class="o">%</span><span class="n">eax</span>
+</span></span><span class="line"><span class="cl">        <span class="n">movl</span>    <span class="o">%</span><span class="n">eax</span><span class="p">,</span> <span class="o">-</span><span class="mi">12</span><span class="p">(</span><span class="o">%</span><span class="n">rbp</span><span class="p">)</span>	<span class="c1">// b
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="n">movl</span>    <span class="err">$</span><span class="mi">0</span><span class="p">,</span> <span class="o">%</span><span class="n">eax</span>
+</span></span><span class="line"><span class="cl">        <span class="n">popq</span>    <span class="o">%</span><span class="n">rbp</span>
+</span></span><span class="line"><span class="cl">        <span class="n">ret</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="item-01-view-c-as-a-federation-of-languages">item 01: View C++ as a federation of languages</h3>
+<p>C++ 高效编程守则视状况而变，取决于使用C++的哪一部分。</p>
+<ul>
+<li>
+<p>C</p>
+<p>block、statement、preprocsssor、built-in data type、array、pointer&hellip;</p>
+</li>
+<li>
+<p>Object-Oriented C++</p>
+<p>class、encapsulation、inheritance、polymorphism、virtual function&hellip;</p>
+</li>
+<li>
+<p>Template C++</p>
+<p>Generic programming</p>
+</li>
+<li>
+<p>STL</p>
+<p>container、allocator、iterator、algorithm、function object、adaptor</p>
+</li>
+</ul>
+<h3 id="item-02-prefer-consts-enums-and-inlines-to-defines">item 02: Prefer consts， enums and inlines to #defines</h3>
+<p>#define在预处理阶段完成简单的替换，对编译器透明，不涉及作用域，无法定义类的私有常量。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">CPP</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="k">private</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">  	<span class="k">static</span> <span class="k">const</span> <span class="kt">int</span> <span class="n">version</span><span class="p">;</span>	<span class="c1">// 类常量声明，位于头文件内
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">};</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// in-class initialization 现在也开始支持了
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">const</span> <span class="kt">double</span> <span class="n">CPP</span><span class="o">::</span><span class="n">version</span> <span class="o">=</span> <span class="mi">202100</span><span class="p">;</span>	<span class="c1">// 类常量定义，位于实现文件内
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="c1">// the enum hack？
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">class</span> <span class="nc">CPP</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="k">private</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">  	<span class="k">enum</span> <span class="p">{</span> <span class="n">version</span> <span class="o">=</span> <span class="mi">202100</span><span class="p">;</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// #define macro么，我还真没用过
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="cp">#define CALL_WITH_MAX(a, b) f((a) &gt; (b) ? (a) : (b))
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="c1">// 使用 inline template 替换 macro，一个
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">inline</span> <span class="kt">void</span> <span class="n">call_with_max</span><span class="p">(</span><span class="k">const</span> <span class="n">T</span><span class="o">&amp;</span> <span class="n">a</span><span class="p">,</span> <span class="k">const</span> <span class="n">T</span><span class="o">&amp;</span> <span class="n">b</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">  	<span class="n">f</span><span class="p">(</span><span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span> <span class="o">?</span> <span class="nl">a</span> <span class="p">:</span> <span class="n">b</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="item-03-use-const-whenever-possible">item 03: Use const whenever possible</h3>
+<h3 id="修饰对象">修饰对象</h3>
+<p>const 修饰指针/引用的时候有 top-level const 和 low-level const 之分</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="c1">// low-level const 不能修改指向的对象
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kt">int</span> <span class="k">const</span> <span class="o">*</span><span class="n">p1</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">(</span><span class="mi">37</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// *p1 = 73;	// error: assignment of read-only location &#39;* p1&#39;
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">p1</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">(</span><span class="mi">73</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// top-level const 不能修改自身的指向
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kt">int</span><span class="o">*</span> <span class="k">const</span> <span class="n">p2</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">(</span><span class="mi">37</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="o">*</span><span class="n">p2</span> <span class="o">=</span> <span class="mi">73</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// p2 = new int(73);	// error: assignment of read-only variable &#39;p2&#39;
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="修饰函数">修饰函数</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="c1">// 修饰函数返回值
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 考虑有如下有理数类，重载”*“运算符
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">class</span> <span class="nc">Rational</span> <span class="p">{</span> <span class="p">...</span> <span class="p">};</span>
+</span></span><span class="line"><span class="cl"><span class="k">const</span> <span class="n">Rational</span> <span class="k">operator</span> <span class="o">*</span> <span class="p">(</span><span class="k">const</span> <span class="n">Rational</span><span class="o">&amp;</span> <span class="n">lhs</span><span class="p">,</span> <span class="k">const</span> <span class="n">Rational</span><span class="o">&amp;</span> <span class="n">rhs</span><span class="p">)</span> <span class="p">{</span> <span class="p">...</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 倘使没考虑到返回常量，那么有可能出现下面的情况
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">Rational</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="n">a</span> <span class="o">*</span> <span class="n">b</span><span class="p">)</span> <span class="o">=</span> <span class="n">c</span><span class="p">;</span>	<span class="c1">// operator * 后又调用了 operator =，完全搞不懂想做什么
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">if</span> <span class="p">(</span><span class="n">a</span><span class="o">*</span><span class="n">b</span> <span class="o">=</span> <span class="n">c</span><span class="p">)</span> <span class="p">{</span> <span class="p">...</span> <span class="p">}</span>	<span class="c1">// 误写，本意是判断 a*b == c
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 修饰成员函数
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 如果把 function 视作 object 的话，那么自然也有同样也该有 top/low 之分
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 只不过这里称作 bitwise constness（或 physical constness） 和 logical constness 
+</span></span></span><span class="line"><span class="cl"><span class="c1">// bitwise constness 坚持只要不改动任何类的成员即可，对应于 top-level const
+</span></span></span><span class="line"><span class="cl"><span class="c1">// logical constness 则坚持类成员指向的对象也应当保持 const 属性，对应于 low-level const
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">class</span> <span class="nc">CPP</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="k">public</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">char</span><span class="o">&amp;</span> <span class="k">operator</span><span class="p">[](</span><span class="n">std</span><span class="o">::</span><span class="n">size_t</span> <span class="n">positon</span><span class="p">)</span> <span class="k">const</span>	<span class="c1">// 遵循 bitwise constness，违背 logical constness
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">text</span><span class="p">[</span><span class="n">positon</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">private</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">  	<span class="kt">char</span> <span class="o">*</span><span class="n">text</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl"><span class="k">const</span> <span class="n">CPP</span> <span class="nf">cctb</span><span class="p">(</span><span class="s">&#34;hello&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kt">char</span> <span class="o">*</span><span class="n">p</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">cctb</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="o">*</span><span class="n">p</span> <span class="o">=</span> <span class="sc">&#39;j&#39;</span><span class="p">;</span>	<span class="c1">// cctb 声明为常量了，此处却可以对其进行修改，实在不应该
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="c1">// const 成员函数和普通成员函数构成 override
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 遵循 DIP，应当让 no-const 版本调用 const 版本以避免代码重复
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="item-04-make-sure-that-objects-are-initialized-before-they-are-used">item 04: Make sure that objects are initialized before they are used</h3>
+<p>鉴于规则复杂，记忆起来困难，最佳的处理方式是：永远在使用对象之前先对其进行初始化。</p>
+<p>内建类型手工初始化，其余交由构造函数完成，但注意区分 assignment 和 initialization。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="c1">// C++规定，对象的成员变量的初始化动作发生在进入构造函数体之前
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 语法层面，提供了 member initialization list 机制，供初始化成员变量之用
+</span></span></span><span class="line"><span class="cl"><span class="c1">// initialization
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">class</span> <span class="nc">CPP1</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="k">public</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">CPP1</span><span class="p">(</span><span class="kt">int</span> <span class="n">value</span><span class="p">)</span> <span class="o">:</span> <span class="n">value</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="p">{}</span>
+</span></span><span class="line"><span class="cl"><span class="k">private</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">value</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// assignment
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">class</span> <span class="nc">CPP2</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="k">public</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">CPP2</span><span class="p">(</span><span class="kt">int</span> <span class="n">value</span><span class="p">)</span> <span class="p">{</span> <span class="n">value</span> <span class="o">=</span> <span class="n">value</span><span class="p">;</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">private</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">value</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">CPP1</span> <span class="n">c1</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">CPP2</span> <span class="n">c2</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 从汇编可以看出来，member initialization list 并不是语法糖
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">CPP1</span><span class="o">::</span><span class="n">CPP1</span><span class="p">(</span><span class="kt">int</span><span class="p">)</span> <span class="p">[</span><span class="n">base</span> <span class="n">object</span> <span class="n">constructor</span><span class="p">]</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">push</span>    <span class="n">rbp</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">rbp</span><span class="p">,</span> <span class="n">rsp</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">QWORD</span> <span class="n">PTR</span> <span class="p">[</span><span class="n">rbp</span><span class="o">-</span><span class="mi">8</span><span class="p">],</span> <span class="n">rdi</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">DWORD</span> <span class="n">PTR</span> <span class="p">[</span><span class="n">rbp</span><span class="o">-</span><span class="mi">12</span><span class="p">],</span> <span class="n">esi</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">rax</span><span class="p">,</span> <span class="n">QWORD</span> <span class="n">PTR</span> <span class="p">[</span><span class="n">rbp</span><span class="o">-</span><span class="mi">8</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">edx</span><span class="p">,</span> <span class="n">DWORD</span> <span class="n">PTR</span> <span class="p">[</span><span class="n">rbp</span><span class="o">-</span><span class="mi">12</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">DWORD</span> <span class="n">PTR</span> <span class="p">[</span><span class="n">rax</span><span class="p">],</span> <span class="n">edx</span>
+</span></span><span class="line"><span class="cl">        <span class="n">nop</span>
+</span></span><span class="line"><span class="cl">        <span class="n">pop</span>     <span class="n">rbp</span>
+</span></span><span class="line"><span class="cl">        <span class="n">ret</span>
+</span></span><span class="line"><span class="cl"><span class="n">CPP2</span><span class="o">::</span><span class="n">CPP2</span><span class="p">(</span><span class="kt">int</span><span class="p">)</span> <span class="p">[</span><span class="n">base</span> <span class="n">object</span> <span class="n">constructor</span><span class="p">]</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">push</span>    <span class="n">rbp</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">rbp</span><span class="p">,</span> <span class="n">rsp</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">QWORD</span> <span class="n">PTR</span> <span class="p">[</span><span class="n">rbp</span><span class="o">-</span><span class="mi">8</span><span class="p">],</span> <span class="n">rdi</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">DWORD</span> <span class="n">PTR</span> <span class="p">[</span><span class="n">rbp</span><span class="o">-</span><span class="mi">12</span><span class="p">],</span> <span class="n">esi</span>
+</span></span><span class="line"><span class="cl">        <span class="n">nop</span>
+</span></span><span class="line"><span class="cl">        <span class="n">pop</span>     <span class="n">rbp</span>
+</span></span><span class="line"><span class="cl">        <span class="n">ret</span>
+</span></span><span class="line"><span class="cl"><span class="nl">main</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">push</span>    <span class="n">rbp</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">rbp</span><span class="p">,</span> <span class="n">rsp</span>
+</span></span><span class="line"><span class="cl">        <span class="n">sub</span>     <span class="n">rsp</span><span class="p">,</span> <span class="mi">16</span>
+</span></span><span class="line"><span class="cl">        <span class="n">lea</span>     <span class="n">rax</span><span class="p">,</span> <span class="p">[</span><span class="n">rbp</span><span class="o">-</span><span class="mi">4</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">esi</span><span class="p">,</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">rdi</span><span class="p">,</span> <span class="n">rax</span>
+</span></span><span class="line"><span class="cl">        <span class="n">call</span>    <span class="n">CPP1</span><span class="o">::</span><span class="n">CPP1</span><span class="p">(</span><span class="kt">int</span><span class="p">)</span> <span class="p">[</span><span class="n">complete</span> <span class="n">object</span> <span class="n">constructor</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">lea</span>     <span class="n">rax</span><span class="p">,</span> <span class="p">[</span><span class="n">rbp</span><span class="o">-</span><span class="mi">8</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">esi</span><span class="p">,</span> <span class="mi">2</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">rdi</span><span class="p">,</span> <span class="n">rax</span>
+</span></span><span class="line"><span class="cl">        <span class="n">call</span>    <span class="n">CPP2</span><span class="o">::</span><span class="n">CPP2</span><span class="p">(</span><span class="kt">int</span><span class="p">)</span> <span class="p">[</span><span class="n">complete</span> <span class="n">object</span> <span class="n">constructor</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">eax</span><span class="p">,</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">        <span class="n">leave</span>
+</span></span><span class="line"><span class="cl">        <span class="n">ret</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>下面的例子没看明白，留坑。</p>
+<h2 id="chapter-2-constructors-destructors-and-assignment-operators">chapter 2 Constructors, Destructors, and Assignment Operators</h2>
+<h3 id="item-05-know-what-functions-c-cliently-writes-and-call">item 05: Know what functions C++ cliently writes and call</h3>
+<p>好了好了，又到了欢乐的时刻了，各种人都会告诉你，如果你不写 constructor、destructor、copy constructor、assignemtn operator&hellip;等等的时候，编译器会自动生成默认版本。</p>
+<p>这话错吗，也没错吧，这就好像小学数学告诉你三角形内角之和为180°，但不会说此结论仅在欧氏几何中适用，那时候也接触不到非欧几何不是~~，别说小学了，大学毕业都没怎么接触非欧几何~~。此处同理，这是符合认知规律的。</p>
+<p>扯远了，说回来，就目前我的知识储备对此问题的理解如下：提不提供取决于有没必要提供以及能不能提供。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">  1
+</span><span class="lnt">  2
+</span><span class="lnt">  3
+</span><span class="lnt">  4
+</span><span class="lnt">  5
+</span><span class="lnt">  6
+</span><span class="lnt">  7
+</span><span class="lnt">  8
+</span><span class="lnt">  9
+</span><span class="lnt"> 10
+</span><span class="lnt"> 11
+</span><span class="lnt"> 12
+</span><span class="lnt"> 13
+</span><span class="lnt"> 14
+</span><span class="lnt"> 15
+</span><span class="lnt"> 16
+</span><span class="lnt"> 17
+</span><span class="lnt"> 18
+</span><span class="lnt"> 19
+</span><span class="lnt"> 20
+</span><span class="lnt"> 21
+</span><span class="lnt"> 22
+</span><span class="lnt"> 23
+</span><span class="lnt"> 24
+</span><span class="lnt"> 25
+</span><span class="lnt"> 26
+</span><span class="lnt"> 27
+</span><span class="lnt"> 28
+</span><span class="lnt"> 29
+</span><span class="lnt"> 30
+</span><span class="lnt"> 31
+</span><span class="lnt"> 32
+</span><span class="lnt"> 33
+</span><span class="lnt"> 34
+</span><span class="lnt"> 35
+</span><span class="lnt"> 36
+</span><span class="lnt"> 37
+</span><span class="lnt"> 38
+</span><span class="lnt"> 39
+</span><span class="lnt"> 40
+</span><span class="lnt"> 41
+</span><span class="lnt"> 42
+</span><span class="lnt"> 43
+</span><span class="lnt"> 44
+</span><span class="lnt"> 45
+</span><span class="lnt"> 46
+</span><span class="lnt"> 47
+</span><span class="lnt"> 48
+</span><span class="lnt"> 49
+</span><span class="lnt"> 50
+</span><span class="lnt"> 51
+</span><span class="lnt"> 52
+</span><span class="lnt"> 53
+</span><span class="lnt"> 54
+</span><span class="lnt"> 55
+</span><span class="lnt"> 56
+</span><span class="lnt"> 57
+</span><span class="lnt"> 58
+</span><span class="lnt"> 59
+</span><span class="lnt"> 60
+</span><span class="lnt"> 61
+</span><span class="lnt"> 62
+</span><span class="lnt"> 63
+</span><span class="lnt"> 64
+</span><span class="lnt"> 65
+</span><span class="lnt"> 66
+</span><span class="lnt"> 67
+</span><span class="lnt"> 68
+</span><span class="lnt"> 69
+</span><span class="lnt"> 70
+</span><span class="lnt"> 71
+</span><span class="lnt"> 72
+</span><span class="lnt"> 73
+</span><span class="lnt"> 74
+</span><span class="lnt"> 75
+</span><span class="lnt"> 76
+</span><span class="lnt"> 77
+</span><span class="lnt"> 78
+</span><span class="lnt"> 79
+</span><span class="lnt"> 80
+</span><span class="lnt"> 81
+</span><span class="lnt"> 82
+</span><span class="lnt"> 83
+</span><span class="lnt"> 84
+</span><span class="lnt"> 85
+</span><span class="lnt"> 86
+</span><span class="lnt"> 87
+</span><span class="lnt"> 88
+</span><span class="lnt"> 89
+</span><span class="lnt"> 90
+</span><span class="lnt"> 91
+</span><span class="lnt"> 92
+</span><span class="lnt"> 93
+</span><span class="lnt"> 94
+</span><span class="lnt"> 95
+</span><span class="lnt"> 96
+</span><span class="lnt"> 97
+</span><span class="lnt"> 98
+</span><span class="lnt"> 99
+</span><span class="lnt">100
+</span><span class="lnt">101
+</span><span class="lnt">102
+</span><span class="lnt">103
+</span><span class="lnt">104
+</span><span class="lnt">105
+</span><span class="lnt">106
+</span><span class="lnt">107
+</span><span class="lnt">108
+</span><span class="lnt">109
+</span><span class="lnt">110
+</span><span class="lnt">111
+</span><span class="lnt">112
+</span><span class="lnt">113
+</span><span class="lnt">114
+</span><span class="lnt">115
+</span><span class="lnt">116
+</span><span class="lnt">117
+</span><span class="lnt">118
+</span><span class="lnt">119
+</span><span class="lnt">120
+</span><span class="lnt">121
+</span><span class="lnt">122
+</span><span class="lnt">123
+</span><span class="lnt">124
+</span><span class="lnt">125
+</span><span class="lnt">126
+</span><span class="lnt">127
+</span><span class="lnt">128
+</span><span class="lnt">129
+</span><span class="lnt">130
+</span><span class="lnt">131
+</span><span class="lnt">132
+</span><span class="lnt">133
+</span><span class="lnt">134
+</span><span class="lnt">135
+</span><span class="lnt">136
+</span><span class="lnt">137
+</span><span class="lnt">138
+</span><span class="lnt">139
+</span><span class="lnt">140
+</span><span class="lnt">141
+</span><span class="lnt">142
+</span><span class="lnt">143
+</span><span class="lnt">144
+</span><span class="lnt">145
+</span><span class="lnt">146
+</span><span class="lnt">147
+</span><span class="lnt">148
+</span><span class="lnt">149
+</span><span class="lnt">150
+</span><span class="lnt">151
+</span><span class="lnt">152
+</span><span class="lnt">153
+</span><span class="lnt">154
+</span><span class="lnt">155
+</span><span class="lnt">156
+</span><span class="lnt">157
+</span><span class="lnt">158
+</span><span class="lnt">159
+</span><span class="lnt">160
+</span><span class="lnt">161
+</span><span class="lnt">162
+</span><span class="lnt">163
+</span><span class="lnt">164
+</span><span class="lnt">165
+</span><span class="lnt">166
+</span><span class="lnt">167
+</span><span class="lnt">168
+</span><span class="lnt">169
+</span><span class="lnt">170
+</span><span class="lnt">171
+</span><span class="lnt">172
+</span><span class="lnt">173
+</span><span class="lnt">174
+</span><span class="lnt">175
+</span><span class="lnt">176
+</span><span class="lnt">177
+</span><span class="lnt">178
+</span><span class="lnt">179
+</span><span class="lnt">180
+</span><span class="lnt">181
+</span><span class="lnt">182
+</span><span class="lnt">183
+</span><span class="lnt">184
+</span><span class="lnt">185
+</span><span class="lnt">186
+</span><span class="lnt">187
+</span><span class="lnt">188
+</span><span class="lnt">189
+</span><span class="lnt">190
+</span><span class="lnt">191
+</span><span class="lnt">192
+</span><span class="lnt">193
+</span><span class="lnt">194
+</span><span class="lnt">195
+</span><span class="lnt">196
+</span><span class="lnt">197
+</span><span class="lnt">198
+</span><span class="lnt">199
+</span><span class="lnt">200
+</span><span class="lnt">201
+</span><span class="lnt">202
+</span><span class="lnt">203
+</span><span class="lnt">204
+</span><span class="lnt">205
+</span><span class="lnt">206
+</span><span class="lnt">207
+</span><span class="lnt">208
+</span><span class="lnt">209
+</span><span class="lnt">210
+</span><span class="lnt">211
+</span><span class="lnt">212
+</span><span class="lnt">213
+</span><span class="lnt">214
+</span><span class="lnt">215
+</span><span class="lnt">216
+</span><span class="lnt">217
+</span><span class="lnt">218
+</span><span class="lnt">219
+</span><span class="lnt">220
+</span><span class="lnt">221
+</span><span class="lnt">222
+</span><span class="lnt">223
+</span><span class="lnt">224
+</span><span class="lnt">225
+</span><span class="lnt">226
+</span><span class="lnt">227
+</span><span class="lnt">228
+</span><span class="lnt">229
+</span><span class="lnt">230
+</span><span class="lnt">231
+</span><span class="lnt">232
+</span><span class="lnt">233
+</span><span class="lnt">234
+</span><span class="lnt">235
+</span><span class="lnt">236
+</span><span class="lnt">237
+</span><span class="lnt">238
+</span><span class="lnt">239
+</span><span class="lnt">240
+</span><span class="lnt">241
+</span><span class="lnt">242
+</span><span class="lnt">243
+</span><span class="lnt">244
+</span><span class="lnt">245
+</span><span class="lnt">246
+</span><span class="lnt">247
+</span><span class="lnt">248
+</span><span class="lnt">249
+</span><span class="lnt">250
+</span><span class="lnt">251
+</span><span class="lnt">252
+</span><span class="lnt">253
+</span><span class="lnt">254
+</span><span class="lnt">255
+</span><span class="lnt">256
+</span><span class="lnt">257
+</span><span class="lnt">258
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="c1">// 先说有没有必要提供
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 用到了才会提供，用不到提供干嘛呢
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">class</span> <span class="nc">CPP</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="k">public</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl"><span class="k">private</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">CPP</span> <span class="n">c1</span><span class="p">,</span> <span class="n">c2</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">c1</span> <span class="o">=</span> <span class="n">c2</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">CPP</span> <span class="n">c3</span><span class="p">(</span><span class="n">c1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 猜猜看，对应的汇编代码长啥样子
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nl">main</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">push</span>    <span class="n">rbp</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">rbp</span><span class="p">,</span> <span class="n">rsp</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">eax</span><span class="p">,</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">        <span class="n">pop</span>     <span class="n">rbp</span>
+</span></span><span class="line"><span class="cl">        <span class="n">ret</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// surprising，啥也没，和 main 函数体为空生成的汇编代码一样
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 编译优化掉了么？并不是，编译参数我特意加了 -O0
+</span></span></span><span class="line"><span class="cl"><span class="c1">// O3 优化后的汇编代码如下
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nl">main</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">xor</span>     <span class="n">eax</span><span class="p">,</span> <span class="n">eax</span>
+</span></span><span class="line"><span class="cl">        <span class="n">ret</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 上面是勿需提供的极端，empty class，试着给类添加些成员变量呢？
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 扔一个 integer 看看          
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">class</span> <span class="nc">CPP</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="k">public</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl"><span class="k">private</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">value</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// ctor、dtor、copy ctor、operator = 都没如约出现
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 原因么，没多么复杂，还记得 chapter1 里面强调的注意区分 declaration 和 initialization 么，这里显然只是 declaration
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 改用 initialization
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">class</span> <span class="nc">CPP</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="k">private</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">CPP</span> <span class="o">*</span><span class="n">c1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">CPP</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">  	<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nl">main</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">push</span>    <span class="n">rbp</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">rbp</span><span class="p">,</span> <span class="n">rsp</span>
+</span></span><span class="line"><span class="cl">        <span class="n">sub</span>     <span class="n">rsp</span><span class="p">,</span> <span class="mi">16</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">edi</span><span class="p">,</span> <span class="mi">4</span>
+</span></span><span class="line"><span class="cl">        <span class="n">call</span>    <span class="k">operator</span> <span class="k">new</span><span class="p">(</span><span class="kt">unsigned</span> <span class="kt">long</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">DWORD</span> <span class="n">PTR</span> <span class="p">[</span><span class="n">rax</span><span class="p">],</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">QWORD</span> <span class="n">PTR</span> <span class="p">[</span><span class="n">rbp</span><span class="o">-</span><span class="mi">8</span><span class="p">],</span> <span class="n">rax</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">eax</span><span class="p">,</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">        <span class="n">leave</span>
+</span></span><span class="line"><span class="cl">        <span class="n">ret</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 看汇编仅调用了 operator new，operator new 会调用 malloc 分配以内，以及 ctor 进行初始化操作
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 但这儿究竟有没有调用 default ctor 呢？很不明显
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">class</span> <span class="nc">CPP</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="k">private</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">id</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">CPP</span> <span class="o">*</span><span class="n">c1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">CPP</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 对应的汇编，operator new 和 default ctor都调用了，也生成了 default ctor
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">CPP</span><span class="o">::</span><span class="n">CPP</span><span class="p">()</span> <span class="p">[</span><span class="n">base</span> <span class="n">object</span> <span class="n">constructor</span><span class="p">]</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">push</span>    <span class="n">rbp</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">rbp</span><span class="p">,</span> <span class="n">rsp</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">QWORD</span> <span class="n">PTR</span> <span class="p">[</span><span class="n">rbp</span><span class="o">-</span><span class="mi">8</span><span class="p">],</span> <span class="n">rdi</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">rax</span><span class="p">,</span> <span class="n">QWORD</span> <span class="n">PTR</span> <span class="p">[</span><span class="n">rbp</span><span class="o">-</span><span class="mi">8</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">DWORD</span> <span class="n">PTR</span> <span class="p">[</span><span class="n">rax</span><span class="p">],</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">        <span class="n">nop</span>
+</span></span><span class="line"><span class="cl">        <span class="n">pop</span>     <span class="n">rbp</span>
+</span></span><span class="line"><span class="cl">        <span class="n">ret</span>
+</span></span><span class="line"><span class="cl"><span class="nl">main</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">push</span>    <span class="n">rbp</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">rbp</span><span class="p">,</span> <span class="n">rsp</span>
+</span></span><span class="line"><span class="cl">        <span class="n">push</span>    <span class="n">rbx</span>
+</span></span><span class="line"><span class="cl">        <span class="n">sub</span>     <span class="n">rsp</span><span class="p">,</span> <span class="mi">24</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">edi</span><span class="p">,</span> <span class="mi">4</span>
+</span></span><span class="line"><span class="cl">        <span class="n">call</span>    <span class="k">operator</span> <span class="k">new</span><span class="p">(</span><span class="kt">unsigned</span> <span class="kt">long</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">rbx</span><span class="p">,</span> <span class="n">rax</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">DWORD</span> <span class="n">PTR</span> <span class="p">[</span><span class="n">rbx</span><span class="p">],</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">rdi</span><span class="p">,</span> <span class="n">rbx</span>
+</span></span><span class="line"><span class="cl">        <span class="n">call</span>    <span class="n">CPP</span><span class="o">::</span><span class="n">CPP</span><span class="p">()</span> <span class="p">[</span><span class="n">complete</span> <span class="n">object</span> <span class="n">constructor</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">QWORD</span> <span class="n">PTR</span> <span class="p">[</span><span class="n">rbp</span><span class="o">-</span><span class="mi">24</span><span class="p">],</span> <span class="n">rbx</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">eax</span><span class="p">,</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">rbx</span><span class="p">,</span> <span class="n">QWORD</span> <span class="n">PTR</span> <span class="p">[</span><span class="n">rbp</span><span class="o">-</span><span class="mi">8</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">leave</span>
+</span></span><span class="line"><span class="cl">        <span class="n">ret</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// ctor 对这儿说的差不多了，copy ctor 同理，但有点...
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">class</span> <span class="nc">CPP</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="k">private</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">id</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">CPP</span> <span class="o">*</span><span class="n">c1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">CPP</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="n">CPP</span> <span class="o">*</span><span class="n">c2</span><span class="p">(</span><span class="n">c1</span><span class="p">);</span>		<span class="c1">// 我以为怎么着这儿也要生成 copy ctor 吧
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 实际上并没有
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">CPP</span><span class="o">::</span><span class="n">CPP</span><span class="p">()</span> <span class="p">[</span><span class="n">base</span> <span class="n">object</span> <span class="n">constructor</span><span class="p">]</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">push</span>    <span class="n">rbp</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">rbp</span><span class="p">,</span> <span class="n">rsp</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">QWORD</span> <span class="n">PTR</span> <span class="p">[</span><span class="n">rbp</span><span class="o">-</span><span class="mi">8</span><span class="p">],</span> <span class="n">rdi</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">rax</span><span class="p">,</span> <span class="n">QWORD</span> <span class="n">PTR</span> <span class="p">[</span><span class="n">rbp</span><span class="o">-</span><span class="mi">8</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">DWORD</span> <span class="n">PTR</span> <span class="p">[</span><span class="n">rax</span><span class="p">],</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">        <span class="n">nop</span>
+</span></span><span class="line"><span class="cl">        <span class="n">pop</span>     <span class="n">rbp</span>
+</span></span><span class="line"><span class="cl">        <span class="n">ret</span>
+</span></span><span class="line"><span class="cl"><span class="nl">main</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">push</span>    <span class="n">rbp</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">rbp</span><span class="p">,</span> <span class="n">rsp</span>
+</span></span><span class="line"><span class="cl">        <span class="n">push</span>    <span class="n">rbx</span>
+</span></span><span class="line"><span class="cl">        <span class="n">sub</span>     <span class="n">rsp</span><span class="p">,</span> <span class="mi">24</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">edi</span><span class="p">,</span> <span class="mi">4</span>
+</span></span><span class="line"><span class="cl">        <span class="n">call</span>    <span class="k">operator</span> <span class="k">new</span><span class="p">(</span><span class="kt">unsigned</span> <span class="kt">long</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">rbx</span><span class="p">,</span> <span class="n">rax</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">DWORD</span> <span class="n">PTR</span> <span class="p">[</span><span class="n">rbx</span><span class="p">],</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">rdi</span><span class="p">,</span> <span class="n">rbx</span>
+</span></span><span class="line"><span class="cl">        <span class="n">call</span>    <span class="n">CPP</span><span class="o">::</span><span class="n">CPP</span><span class="p">()</span> <span class="p">[</span><span class="n">complete</span> <span class="n">object</span> <span class="n">constructor</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">QWORD</span> <span class="n">PTR</span> <span class="p">[</span><span class="n">rbp</span><span class="o">-</span><span class="mi">24</span><span class="p">],</span> <span class="n">rbx</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">rax</span><span class="p">,</span> <span class="n">QWORD</span> <span class="n">PTR</span> <span class="p">[</span><span class="n">rbp</span><span class="o">-</span><span class="mi">24</span><span class="p">]</span>		<span class="c1">// 这一行和下一行完成 c2 的构造，居然仅是 mov 指令，出乎意料
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="n">mov</span>     <span class="n">QWORD</span> <span class="n">PTR</span> <span class="p">[</span><span class="n">rbp</span><span class="o">-</span><span class="mi">32</span><span class="p">],</span> <span class="n">rax</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">eax</span><span class="p">,</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">rbx</span><span class="p">,</span> <span class="n">QWORD</span> <span class="n">PTR</span> <span class="p">[</span><span class="n">rbp</span><span class="o">-</span><span class="mi">8</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">leave</span>
+</span></span><span class="line"><span class="cl">        <span class="n">ret</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">          
+</span></span><span class="line"><span class="cl"><span class="c1">// 不玩了不玩了，太搞心态了，都一起出来吧！
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">class</span> <span class="nc">CPP</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="k">private</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">value</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">CPP</span> <span class="n">c1</span><span class="p">,</span> <span class="n">c2</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">c2</span> <span class="o">=</span> <span class="n">c1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">CPP</span> <span class="n">c3</span><span class="p">(</span><span class="n">c1</span><span class="p">);;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 对应汇编
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">CPP</span><span class="o">::</span><span class="n">CPP</span><span class="p">()</span> <span class="p">[</span><span class="n">base</span> <span class="n">object</span> <span class="n">constructor</span><span class="p">]</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">push</span>    <span class="n">rbp</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">rbp</span><span class="p">,</span> <span class="n">rsp</span>
+</span></span><span class="line"><span class="cl">        <span class="n">sub</span>     <span class="n">rsp</span><span class="p">,</span> <span class="mi">16</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">QWORD</span> <span class="n">PTR</span> <span class="p">[</span><span class="n">rbp</span><span class="o">-</span><span class="mi">8</span><span class="p">],</span> <span class="n">rdi</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">rax</span><span class="p">,</span> <span class="n">QWORD</span> <span class="n">PTR</span> <span class="p">[</span><span class="n">rbp</span><span class="o">-</span><span class="mi">8</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">rdi</span><span class="p">,</span> <span class="n">rax</span>
+</span></span><span class="line"><span class="cl">        <span class="n">call</span>    <span class="n">std</span><span class="o">::</span><span class="n">__cxx11</span><span class="o">::</span><span class="n">basic_string</span><span class="o">&lt;</span><span class="kt">char</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">char_traits</span><span class="o">&lt;</span><span class="kt">char</span><span class="o">&gt;</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">allocator</span><span class="o">&lt;</span><span class="kt">char</span><span class="o">&gt;</span> <span class="o">&gt;::</span><span class="n">basic_string</span><span class="p">()</span> <span class="p">[</span><span class="n">complete</span> <span class="n">object</span> <span class="n">constructor</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">nop</span>
+</span></span><span class="line"><span class="cl">        <span class="n">leave</span>
+</span></span><span class="line"><span class="cl">        <span class="n">ret</span>
+</span></span><span class="line"><span class="cl"><span class="n">CPP</span><span class="o">::~</span><span class="n">CPP</span><span class="p">()</span> <span class="p">[</span><span class="n">base</span> <span class="n">object</span> <span class="n">destructor</span><span class="p">]</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">push</span>    <span class="n">rbp</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">rbp</span><span class="p">,</span> <span class="n">rsp</span>
+</span></span><span class="line"><span class="cl">        <span class="n">sub</span>     <span class="n">rsp</span><span class="p">,</span> <span class="mi">16</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">QWORD</span> <span class="n">PTR</span> <span class="p">[</span><span class="n">rbp</span><span class="o">-</span><span class="mi">8</span><span class="p">],</span> <span class="n">rdi</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">rax</span><span class="p">,</span> <span class="n">QWORD</span> <span class="n">PTR</span> <span class="p">[</span><span class="n">rbp</span><span class="o">-</span><span class="mi">8</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">rdi</span><span class="p">,</span> <span class="n">rax</span>
+</span></span><span class="line"><span class="cl">        <span class="n">call</span>    <span class="n">std</span><span class="o">::</span><span class="n">__cxx11</span><span class="o">::</span><span class="n">basic_string</span><span class="o">&lt;</span><span class="kt">char</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">char_traits</span><span class="o">&lt;</span><span class="kt">char</span><span class="o">&gt;</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">allocator</span><span class="o">&lt;</span><span class="kt">char</span><span class="o">&gt;</span> <span class="o">&gt;::~</span><span class="n">basic_string</span><span class="p">()</span> <span class="p">[</span><span class="n">complete</span> <span class="n">object</span> <span class="n">destructor</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">nop</span>
+</span></span><span class="line"><span class="cl">        <span class="n">leave</span>
+</span></span><span class="line"><span class="cl">        <span class="n">ret</span>
+</span></span><span class="line"><span class="cl"><span class="n">CPP</span><span class="o">::</span><span class="k">operator</span><span class="o">=</span><span class="p">(</span><span class="n">CPP</span> <span class="k">const</span><span class="o">&amp;</span><span class="p">)</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">push</span>    <span class="n">rbp</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">rbp</span><span class="p">,</span> <span class="n">rsp</span>
+</span></span><span class="line"><span class="cl">        <span class="n">sub</span>     <span class="n">rsp</span><span class="p">,</span> <span class="mi">16</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">QWORD</span> <span class="n">PTR</span> <span class="p">[</span><span class="n">rbp</span><span class="o">-</span><span class="mi">8</span><span class="p">],</span> <span class="n">rdi</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">QWORD</span> <span class="n">PTR</span> <span class="p">[</span><span class="n">rbp</span><span class="o">-</span><span class="mi">16</span><span class="p">],</span> <span class="n">rsi</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">rdx</span><span class="p">,</span> <span class="n">QWORD</span> <span class="n">PTR</span> <span class="p">[</span><span class="n">rbp</span><span class="o">-</span><span class="mi">16</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">rax</span><span class="p">,</span> <span class="n">QWORD</span> <span class="n">PTR</span> <span class="p">[</span><span class="n">rbp</span><span class="o">-</span><span class="mi">8</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">rsi</span><span class="p">,</span> <span class="n">rdx</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">rdi</span><span class="p">,</span> <span class="n">rax</span>
+</span></span><span class="line"><span class="cl">        <span class="n">call</span>    <span class="n">std</span><span class="o">::</span><span class="n">__cxx11</span><span class="o">::</span><span class="n">basic_string</span><span class="o">&lt;</span><span class="kt">char</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">char_traits</span><span class="o">&lt;</span><span class="kt">char</span><span class="o">&gt;</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">allocator</span><span class="o">&lt;</span><span class="kt">char</span><span class="o">&gt;</span> <span class="o">&gt;::</span><span class="k">operator</span><span class="o">=</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">__cxx11</span><span class="o">::</span><span class="n">basic_string</span><span class="o">&lt;</span><span class="kt">char</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">char_traits</span><span class="o">&lt;</span><span class="kt">char</span><span class="o">&gt;</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">allocator</span><span class="o">&lt;</span><span class="kt">char</span><span class="o">&gt;</span> <span class="o">&gt;</span> <span class="k">const</span><span class="o">&amp;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">rax</span><span class="p">,</span> <span class="n">QWORD</span> <span class="n">PTR</span> <span class="p">[</span><span class="n">rbp</span><span class="o">-</span><span class="mi">8</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">leave</span>
+</span></span><span class="line"><span class="cl">        <span class="n">ret</span>
+</span></span><span class="line"><span class="cl"><span class="n">CPP</span><span class="o">::</span><span class="n">CPP</span><span class="p">(</span><span class="n">CPP</span> <span class="k">const</span><span class="o">&amp;</span><span class="p">)</span> <span class="p">[</span><span class="n">base</span> <span class="n">object</span> <span class="n">constructor</span><span class="p">]</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">push</span>    <span class="n">rbp</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">rbp</span><span class="p">,</span> <span class="n">rsp</span>
+</span></span><span class="line"><span class="cl">        <span class="n">sub</span>     <span class="n">rsp</span><span class="p">,</span> <span class="mi">16</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">QWORD</span> <span class="n">PTR</span> <span class="p">[</span><span class="n">rbp</span><span class="o">-</span><span class="mi">8</span><span class="p">],</span> <span class="n">rdi</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">QWORD</span> <span class="n">PTR</span> <span class="p">[</span><span class="n">rbp</span><span class="o">-</span><span class="mi">16</span><span class="p">],</span> <span class="n">rsi</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">rax</span><span class="p">,</span> <span class="n">QWORD</span> <span class="n">PTR</span> <span class="p">[</span><span class="n">rbp</span><span class="o">-</span><span class="mi">8</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">rdx</span><span class="p">,</span> <span class="n">QWORD</span> <span class="n">PTR</span> <span class="p">[</span><span class="n">rbp</span><span class="o">-</span><span class="mi">16</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">rsi</span><span class="p">,</span> <span class="n">rdx</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">rdi</span><span class="p">,</span> <span class="n">rax</span>
+</span></span><span class="line"><span class="cl">        <span class="n">call</span>    <span class="n">std</span><span class="o">::</span><span class="n">__cxx11</span><span class="o">::</span><span class="n">basic_string</span><span class="o">&lt;</span><span class="kt">char</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">char_traits</span><span class="o">&lt;</span><span class="kt">char</span><span class="o">&gt;</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">allocator</span><span class="o">&lt;</span><span class="kt">char</span><span class="o">&gt;</span> <span class="o">&gt;::</span><span class="n">basic_string</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">__cxx11</span><span class="o">::</span><span class="n">basic_string</span><span class="o">&lt;</span><span class="kt">char</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">char_traits</span><span class="o">&lt;</span><span class="kt">char</span><span class="o">&gt;</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">allocator</span><span class="o">&lt;</span><span class="kt">char</span><span class="o">&gt;</span> <span class="o">&gt;</span> <span class="k">const</span><span class="o">&amp;</span><span class="p">)</span> <span class="p">[</span><span class="n">complete</span> <span class="n">object</span> <span class="n">constructor</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">nop</span>
+</span></span><span class="line"><span class="cl">        <span class="n">leave</span>
+</span></span><span class="line"><span class="cl">        <span class="n">ret</span>
+</span></span><span class="line"><span class="cl"><span class="nl">main</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">push</span>    <span class="n">rbp</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">rbp</span><span class="p">,</span> <span class="n">rsp</span>
+</span></span><span class="line"><span class="cl">        <span class="n">push</span>    <span class="n">rbx</span>
+</span></span><span class="line"><span class="cl">        <span class="n">sub</span>     <span class="n">rsp</span><span class="p">,</span> <span class="mi">104</span>
+</span></span><span class="line"><span class="cl">        <span class="n">lea</span>     <span class="n">rax</span><span class="p">,</span> <span class="p">[</span><span class="n">rbp</span><span class="o">-</span><span class="mi">48</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">rdi</span><span class="p">,</span> <span class="n">rax</span>
+</span></span><span class="line"><span class="cl">        <span class="n">call</span>    <span class="n">CPP</span><span class="o">::</span><span class="n">CPP</span><span class="p">()</span> <span class="p">[</span><span class="n">complete</span> <span class="n">object</span> <span class="n">constructor</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">lea</span>     <span class="n">rax</span><span class="p">,</span> <span class="p">[</span><span class="n">rbp</span><span class="o">-</span><span class="mi">80</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">rdi</span><span class="p">,</span> <span class="n">rax</span>
+</span></span><span class="line"><span class="cl">        <span class="n">call</span>    <span class="n">CPP</span><span class="o">::</span><span class="n">CPP</span><span class="p">()</span> <span class="p">[</span><span class="n">complete</span> <span class="n">object</span> <span class="n">constructor</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">lea</span>     <span class="n">rdx</span><span class="p">,</span> <span class="p">[</span><span class="n">rbp</span><span class="o">-</span><span class="mi">48</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">lea</span>     <span class="n">rax</span><span class="p">,</span> <span class="p">[</span><span class="n">rbp</span><span class="o">-</span><span class="mi">80</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">rsi</span><span class="p">,</span> <span class="n">rdx</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">rdi</span><span class="p">,</span> <span class="n">rax</span>
+</span></span><span class="line"><span class="cl">        <span class="n">call</span>    <span class="n">CPP</span><span class="o">::</span><span class="k">operator</span><span class="o">=</span><span class="p">(</span><span class="n">CPP</span> <span class="k">const</span><span class="o">&amp;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">lea</span>     <span class="n">rdx</span><span class="p">,</span> <span class="p">[</span><span class="n">rbp</span><span class="o">-</span><span class="mi">48</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">lea</span>     <span class="n">rax</span><span class="p">,</span> <span class="p">[</span><span class="n">rbp</span><span class="o">-</span><span class="mi">112</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">rsi</span><span class="p">,</span> <span class="n">rdx</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">rdi</span><span class="p">,</span> <span class="n">rax</span>
+</span></span><span class="line"><span class="cl">        <span class="n">call</span>    <span class="n">CPP</span><span class="o">::</span><span class="n">CPP</span><span class="p">(</span><span class="n">CPP</span> <span class="k">const</span><span class="o">&amp;</span><span class="p">)</span> <span class="p">[</span><span class="n">complete</span> <span class="n">object</span> <span class="n">constructor</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">ebx</span><span class="p">,</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">        <span class="n">lea</span>     <span class="n">rax</span><span class="p">,</span> <span class="p">[</span><span class="n">rbp</span><span class="o">-</span><span class="mi">112</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">rdi</span><span class="p">,</span> <span class="n">rax</span>
+</span></span><span class="line"><span class="cl">        <span class="n">call</span>    <span class="n">CPP</span><span class="o">::~</span><span class="n">CPP</span><span class="p">()</span> <span class="p">[</span><span class="n">complete</span> <span class="n">object</span> <span class="n">destructor</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">lea</span>     <span class="n">rax</span><span class="p">,</span> <span class="p">[</span><span class="n">rbp</span><span class="o">-</span><span class="mi">80</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">rdi</span><span class="p">,</span> <span class="n">rax</span>
+</span></span><span class="line"><span class="cl">        <span class="n">call</span>    <span class="n">CPP</span><span class="o">::~</span><span class="n">CPP</span><span class="p">()</span> <span class="p">[</span><span class="n">complete</span> <span class="n">object</span> <span class="n">destructor</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">lea</span>     <span class="n">rax</span><span class="p">,</span> <span class="p">[</span><span class="n">rbp</span><span class="o">-</span><span class="mi">48</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">rdi</span><span class="p">,</span> <span class="n">rax</span>
+</span></span><span class="line"><span class="cl">        <span class="n">call</span>    <span class="n">CPP</span><span class="o">::~</span><span class="n">CPP</span><span class="p">()</span> <span class="p">[</span><span class="n">complete</span> <span class="n">object</span> <span class="n">destructor</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">eax</span><span class="p">,</span> <span class="n">ebx</span>
+</span></span><span class="line"><span class="cl">        <span class="n">jmp</span>     <span class="p">.</span><span class="n">L10</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">rbx</span><span class="p">,</span> <span class="n">rax</span>
+</span></span><span class="line"><span class="cl">        <span class="n">lea</span>     <span class="n">rax</span><span class="p">,</span> <span class="p">[</span><span class="n">rbp</span><span class="o">-</span><span class="mi">80</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">rdi</span><span class="p">,</span> <span class="n">rax</span>
+</span></span><span class="line"><span class="cl">        <span class="n">call</span>    <span class="n">CPP</span><span class="o">::~</span><span class="n">CPP</span><span class="p">()</span> <span class="p">[</span><span class="n">complete</span> <span class="n">object</span> <span class="n">destructor</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">lea</span>     <span class="n">rax</span><span class="p">,</span> <span class="p">[</span><span class="n">rbp</span><span class="o">-</span><span class="mi">48</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">rdi</span><span class="p">,</span> <span class="n">rax</span>
+</span></span><span class="line"><span class="cl">        <span class="n">call</span>    <span class="n">CPP</span><span class="o">::~</span><span class="n">CPP</span><span class="p">()</span> <span class="p">[</span><span class="n">complete</span> <span class="n">object</span> <span class="n">destructor</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">rax</span><span class="p">,</span> <span class="n">rbx</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">rdi</span><span class="p">,</span> <span class="n">rax</span>
+</span></span><span class="line"><span class="cl">        <span class="n">call</span>    <span class="n">_Unwind_Resume</span>
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nl">L10</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">rbx</span><span class="p">,</span> <span class="n">QWORD</span> <span class="n">PTR</span> <span class="p">[</span><span class="n">rbp</span><span class="o">-</span><span class="mi">8</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">leave</span>
+</span></span><span class="line"><span class="cl">        <span class="n">ret</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="c1">// 再说能不能提供
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 如果提供了，会违背更一般性的原则，则报错
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">CPP</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="k">public</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">    <span class="k">explicit</span> <span class="n">CPP</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">value</span><span class="p">)</span> <span class="o">:</span> <span class="n">value</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="p">{</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">private</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">value</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">value</span> <span class="o">=</span> <span class="s">&#34;hahaha&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">CPP</span> <span class="n">c1</span><span class="p">(</span><span class="n">value</span><span class="p">),</span> <span class="n">c2</span><span class="p">(</span><span class="n">c1</span><span class="p">);</span>		<span class="c1">// 这不是 ctor 和 copy ctor 么？但汇编代码里没有啊
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 这也不是 default ctor 或者 copy ctor 啊
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">CPP</span><span class="o">::</span><span class="n">CPP</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">__cxx11</span><span class="o">::</span><span class="n">basic_string</span><span class="o">&lt;</span><span class="kt">char</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">char_traits</span><span class="o">&lt;</span><span class="kt">char</span><span class="o">&gt;</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">allocator</span><span class="o">&lt;</span><span class="kt">char</span><span class="o">&gt;</span> <span class="o">&gt;&amp;</span><span class="p">)</span> <span class="p">[</span><span class="n">base</span> <span class="n">object</span> <span class="n">constructor</span><span class="p">]</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">push</span>    <span class="n">rbp</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">rbp</span><span class="p">,</span> <span class="n">rsp</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">QWORD</span> <span class="n">PTR</span> <span class="p">[</span><span class="n">rbp</span><span class="o">-</span><span class="mi">8</span><span class="p">],</span> <span class="n">rdi</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">QWORD</span> <span class="n">PTR</span> <span class="p">[</span><span class="n">rbp</span><span class="o">-</span><span class="mi">16</span><span class="p">],</span> <span class="n">rsi</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">rax</span><span class="p">,</span> <span class="n">QWORD</span> <span class="n">PTR</span> <span class="p">[</span><span class="n">rbp</span><span class="o">-</span><span class="mi">8</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">rdx</span><span class="p">,</span> <span class="n">QWORD</span> <span class="n">PTR</span> <span class="p">[</span><span class="n">rbp</span><span class="o">-</span><span class="mi">16</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">QWORD</span> <span class="n">PTR</span> <span class="p">[</span><span class="n">rax</span><span class="p">],</span> <span class="n">rdx</span>
+</span></span><span class="line"><span class="cl">        <span class="n">nop</span>
+</span></span><span class="line"><span class="cl">        <span class="n">pop</span>     <span class="n">rbp</span>
+</span></span><span class="line"><span class="cl">        <span class="n">ret</span>
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nl">LC0</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">string</span> <span class="s">&#34;hahaha&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nl">main</span><span class="p">:</span>		<span class="c1">// 为方便查看，将 main 生成的汇编删除掉
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>				<span class="p">...</span>
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nl">L6</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mov</span>     <span class="n">rbx</span><span class="p">,</span> <span class="n">QWORD</span> <span class="n">PTR</span> <span class="p">[</span><span class="n">rbp</span><span class="o">-</span><span class="mi">8</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">leave</span>
+</span></span><span class="line"><span class="cl">        <span class="n">ret</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">          
+</span></span><span class="line"><span class="cl"><span class="c1">// 不懂了不懂了，实际要讨论的是如下的情况
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">class</span> <span class="nc">CPP</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="k">public</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">    <span class="k">explicit</span> <span class="n">CPP</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">value</span><span class="p">)</span> <span class="o">:</span> <span class="n">value</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="p">{</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">private</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">value</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">value1</span> <span class="o">=</span> <span class="s">&#34;hahaha&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">value2</span> <span class="o">=</span> <span class="s">&#34;tatata&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">CPP</span> <span class="n">c1</span><span class="p">(</span><span class="n">value1</span><span class="p">),</span> <span class="n">c2</span><span class="p">(</span><span class="n">value2</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">  	<span class="c1">// 如果提供了默认的 copy ctor，并进行简单的变量赋值操作
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  	<span class="c1">// 那么意味着更改了引用型成员变量 value 的指向，因而无法通过编译
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">c2</span> <span class="o">=</span> <span class="n">c1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>我裂开了，每次都能发现些奇奇怪怪和以前理解不一样的现象。</p>
+<h3 id="item-06-explicitly-disallow-the-use-of-compiler-generated-functions-you-do-not-want">item 06: Explicitly disallow the use of compiler-generated functions you do not want</h3>
+<p>item05 提到了编译器提供的默认版本 ctor、dtor、copy ctor 和 operator =，但有些时候并不需要，甚至不该需要默认提供的版本。</p>
+<p>举拷贝构造函数的例子来说，对于独有的东西，不希望有一份相同的拷贝，显然不该为其提供 copy ctor，可问题是，编译器发觉没手动提供 copy ctor，可能会生成默认版本的 copy ctor，如果不想编译器提供，那么需要手动提供，完美，无解了。</p>
+<p>书里提供的方法是将 ctor、dtor、copy ctor、operator = 等不希望编译器提供的声明为 private，函数体为空。</p>
+<p>C++ 11 之前，这是比较好的解决思路，但 C++ 11 可以如下，使用 delete 显式地拒绝编译器提供默认版本。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">CPP</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="k">public</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl"><span class="k">private</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">  	<span class="n">CPP</span><span class="p">()</span> <span class="o">=</span> <span class="k">delete</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  	<span class="n">CPP</span><span class="p">(</span><span class="k">const</span> <span class="n">CPP</span><span class="o">&amp;</span> <span class="n">rhs</span><span class="p">)</span> <span class="o">=</span> <span class="k">delete</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  	<span class="n">CPP</span><span class="o">&amp;</span> <span class="k">operator</span> <span class="o">=</span> <span class="p">(</span><span class="k">const</span> <span class="n">CPP</span><span class="o">&amp;</span> <span class="n">rhs</span><span class="p">)</span> <span class="o">=</span> <span class="k">delete</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  	<span class="o">~</span><span class="n">CPP</span><span class="p">()</span> <span class="o">=</span> <span class="k">delete</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 另外，= default 显示让编译器提供，= 0 表示纯虚函数
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="item-07-declare-destructors-virtual-in-polymorphic-base-classes">item 07: Declare destructors virtual in polymorphic base classes</h3>
+<p>析构函数是否声明为 <code>virtual</code> 有两方面的考虑：</p>
+<ul>
+<li>该声明为 <code>virtual</code> 的没声明为 <code>virtual</code>，可能导致局部析构</li>
+<li>不该声明为 <code>virtual</code> 的声明为 <code>virtual</code> 了，可能导致移植性差</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="c1">// case 1: 基类析构函数没有声明为 virtual，当销毁上转型的子类对象时，其结果是未定义的
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 通常只调用基类的析构函数，从而导致局部析构，属于子类的部分无法正确析构
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">class</span> <span class="nc">Base</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="k">public</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">  	<span class="n">Base</span><span class="p">()</span> <span class="o">=</span> <span class="k">default</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  	<span class="o">~</span><span class="n">Base</span><span class="p">()</span> <span class="o">=</span> <span class="k">default</span><span class="p">;</span>	<span class="c1">// 只是漏掉了基类 dtor 的 virtual 声明，会导致子类析构出现问题
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">private</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Derive</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="k">public</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">  	<span class="n">Derive</span><span class="p">(</span><span class="kt">int</span> <span class="n">v</span><span class="p">)</span> <span class="o">:</span> <span class="n">p</span><span class="p">(</span><span class="k">new</span> <span class="kt">int</span><span class="p">(</span><span class="n">v</span><span class="p">))</span> <span class="p">{</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  	<span class="o">~</span><span class="n">Derive</span><span class="p">()</span> <span class="o">=</span> <span class="k">default</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">private</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">  	<span class="kt">int</span> <span class="o">*</span><span class="n">p</span><span class="p">;</span>	<span class="c1">// 无法被正常析构
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">  	<span class="n">Base</span> <span class="o">*</span><span class="n">drive</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Drive</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">  	<span class="k">delete</span> <span class="n">drive</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  	<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 注意 STL 里的绝大多数 container 析构函数都没有声明为 virual
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 这意味着 class CPP : public string {}; 会引起未定义行为
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="c1">// case 2: 不该声明为 virtual 的声明为 virtual 了
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">class</span> <span class="nc">CPP</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="k">public</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">  	<span class="n">CPP</span><span class="p">()</span> <span class="o">=</span> <span class="k">default</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  	<span class="k">virtual</span> <span class="o">~</span><span class="n">CPP</span><span class="p">()</span> <span class="p">{</span> <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&#34;dtor&#34;</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">private</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 须知 no free lunch，虚函数使得运行时多态成为可能，代价是需要额外的内存空间保存虚函数表
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 体现在对象内存里是多附加一个 vptr（virtual table pointer） 虚函数表指针
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 而其他多数语言并没有 vptr
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>原则是：只有当类内有其他的虚函数时，才将其析构函数声明为 <code>virtual</code>。</p>
+<p>说明白点，就是只有当类可能成为基类的时候，才声明析构函数为 <code>virtual</code>。</p>
+<h1 id="单元测试">单元测试</h1>
+<p>主流的单元测试框架是<a href="https://github.com/google/googletest">googletest</a>，官方文档在<a href="https://google.github.io/googletest/">这儿</a>。</p>
+<p>从如下几个方面定义良好的测试：</p>
+<ul>
+<li>测试应当独立且可重复</li>
+<li>测试应当组织好以反映测试代码的结构性</li>
+<li>测试应当具有可移植性</li>
+<li>当测未通过时，应当提供尽可能多的错误信息</li>
+<li>测试框架应当简单易用，使得测试人员能够更好的关注待测试的内容本身</li>
+</ul>
+<h2 id="说明">说明</h2>
+<p><code>ASSERT_*</code> 不通过会终止当前函数，<code>EXPECT_*</code> 则不会，一般情况下，推荐使用 <code>EXPECT_*</code>。</p>
+<h2 id="例子">例子</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="c1">// 注意区分 testsuit 和 test
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">TEST</span><span class="p">(</span><span class="n">TestSuiteName</span><span class="p">,</span> <span class="n">TestName</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="p">...</span> <span class="n">test</span> <span class="n">body</span> <span class="p">...</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">Factorial</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">);</span>  <span class="c1">// Returns the factorial of n
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="c1">// Tests factorial of 0.
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">TEST</span><span class="p">(</span><span class="n">FactorialTest</span><span class="p">,</span> <span class="n">HandlesZeroInput</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="n">EXPECT_EQ</span><span class="p">(</span><span class="n">Factorial</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="mi">1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Tests factorial of positive numbers.
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">TEST</span><span class="p">(</span><span class="n">FactorialTest</span><span class="p">,</span> <span class="n">HandlesPositiveInput</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="n">EXPECT_EQ</span><span class="p">(</span><span class="n">Factorial</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span> <span class="mi">1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="n">EXPECT_EQ</span><span class="p">(</span><span class="n">Factorial</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span> <span class="mi">2</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="n">EXPECT_EQ</span><span class="p">(</span><span class="n">Factorial</span><span class="p">(</span><span class="mi">3</span><span class="p">),</span> <span class="mi">6</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="n">EXPECT_EQ</span><span class="p">(</span><span class="n">Factorial</span><span class="p">(</span><span class="mi">8</span><span class="p">),</span> <span class="mi">40320</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="八股文">八股文</h1>
+    </div>
+
+    
+<footer class="post-footer">
+      
+      <nav class="post-nav">
+        <a class="prev" href="/post/%E7%A1%AC%E4%BB%B6/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">硬件</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        <a class="next" href="/post/%E4%BE%AF%E6%8D%B7c&#43;&#43;%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86%E6%9C%BA%E5%88%B6/">
+            <span class="next-text nav-default">侯捷C&#43;&#43;内存管理机制</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&amp;email=Snl5fn5-e318cn0KOztkKSUn" class="iconfont icon-email" title="email"></a>
+      <a href="https://stackoverflow.com/users/9786406/lttzz" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+      <a href="https://github.com/lttzz" class="iconfont icon-github" title="github"></a>
+      <a href="https://weibo.com/lttzz" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="https://www.douban.com/people/196540309/" class="iconfont icon-douban" title="douban"></a>
+      <a href="https://space.bilibili.com/74153503" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="https://lttzz.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  <div class="busuanzi-footer">
+    <span id="busuanzi_container_site_pv"> site pv: <span id="busuanzi_value_site_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> </span>
+      <span class="division">|</span>
+    <span id="busuanzi_container_site_uv"> site uv: <span id="busuanzi_value_site_uv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> </span>
+  </div>
+
+  <span class="copyright-year">
+    &copy; 
+    2019 - 
+    2022<span class="heart"><i class="iconfont icon-heart"></i></span><span>lttzz</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-140228231-1', 'auto');
+	ga('set', 'anonymizeIp', true);
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+
+
+
+
+</body>
+</html>

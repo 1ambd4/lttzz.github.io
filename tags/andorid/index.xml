@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>andorid on LTTZZ&#39;s BLOG</title>
+    <link>https://lttzz.github.io/tags/andorid/</link>
+    <description>Recent content in andorid on LTTZZ&#39;s BLOG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 17 Jan 2021 11:49:27 +0800</lastBuildDate><atom:link href="https://lttzz.github.io/tags/andorid/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>毕业设计</title>
+      <link>https://lttzz.github.io/post/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1/</link>
+      <pubDate>Sun, 17 Jan 2021 11:49:27 +0800</pubDate>
+      
+      <guid>https://lttzz.github.io/post/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1/</guid>
+      <description>&lt;p&gt;毕设选题：个性化新闻阅读系统移动端的设计与实现&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
